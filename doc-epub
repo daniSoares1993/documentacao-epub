@@ -1,0 +1,36 @@
+PWA -> site desenvolvido para parecer exatamento como um aplicatvo.
+Service Worker : scripts javascript que controlam o armazenamento de cache permitindo um desempenho mais alto, pois permite que os
+assets e grande parte do front, persista armazenado no dispositivo, possibilitando executar esses "apps" completamente offline.
+O PWA é praticamente um app, possibilitando o envio de push notification, icone de acesso na tela do smartphone, splash screen,
+Importante: processos rodando em background, acesso a componentes nativos, como camera, geolicalização...
+Service Workers => são eles que dao permissao para acesso ao cache, navegação online e push notifications;
+Service Workers nada mais é que um script que o navegador executa em segundo plano, separado da pagina web e que possui um ciclo de vida próprio, possibilitando execucao de recursos que não precisam da pagina ou da interação com o usuario para acontecer. 
+Portanto  é necessario seguir a risca as recomendações do google;
+
+
+Basicamente o PWA é um site responsivo turbinado;
+Se o PWA é basicamente um app, quais as vantagens de se desenvolver um PWA?
+- beneficio para empresa e desenolvedores, como um PWA é dependente apenas de CSS e JS, gerar e distribuir uma nova atualização e distribuir para todas as plataformas fica muito mais simples;
+- reutilização de um mesmo código para plataformas diferentes;
+- independência das apps stores;
+
+Principais caracteristicas:
+- progressivo, funciona para qualquer usuario independente do navegador escolhido, é criado com aprimoramento progressivo como principio fundamental;
+- responsivo, adaptabilidade a qualquer tipo de dispositivo;
+- aprimorado com o Service Worker para trabalhar tanto online quanto offline; 
+- caracteristicas de aplicativos nativos;
+- sempre atualizado gracas ao processo de atualização do service Worker;
+- fornecido atraves do https, paraevitar invasões e evitar que o conteudo  seja adulterado;
+- pode ser descobrivel gracas aos manifests W3C e ao escopo de registros do service worker que permite que os mecanismos de pesquisa o encontrem;
+
+Principais Frameworks:
+- ionic
+- polimer
+- Angular
+
+
+Package Document => Cada publicação EPUB contém pelo menos uma versão de seu conteúdo, cada uma das quais é representada por um documento de pacote . O Documento do Pacote especifica todos os recursos necessários para renderizar essa representação do conteúdo. O Documento do Pacote também define uma ordem de leitura para consumo linear e associa metadados e informações de navegação para a Rendição.
+O Documento de Pacote também inclui um collectionelemento [ Pacotes32 ], que permite o agrupamento de Recursos de Publicação logicamente relacionados . Esse elemento existe para permitir o desenvolvimento de recursos especializados de identificação, processamento e renderização de conteúdo, como a capacidade de definir o conteúdo de visualização incorporado ou montar um índice ou dicionário a partir de seus documentos de conteúdo XHTML constituintes.
+
+
+O Ionic Capacitor é uma aplicação open source que permite a leitura de arquivos EPUB a partir de dispositivos móveis. Esta aplicação é construída sobre o Ionic Framework, que é um kit de ferramentas open source para desenvolvimento de aplicativos móveis. O Ionic Capacitor permite a leitura de arquivos EPUB em dispositivos móveis, como smartphones e tablets, sem necessidade de instalar outros aplicativos. Ele fornece uma interface de usuário intuitiva para navegar pelos arquivos EPUB, bem como recursos avançados, como a capacidade de adicionar anotações e destacar texto. Além disso, ele permite a leitura offline, para que os usuários possam ler mesmo que não estejam conectados à internet. O Ionic Capacitor é uma excelente opção para quem procura uma aplicação de leitura EPUB para dispositivos móveis.
