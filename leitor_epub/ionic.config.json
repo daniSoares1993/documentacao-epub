@@ -1,0 +1,7 @@
+{
+  "name": "leitor_epub",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
