@@ -33,18 +33,18 @@ Package Document => Cada publicação EPUB contém pelo menos uma versão de seu
 O Documento de Pacote também inclui um collectionelemento [ Pacotes32 ], que permite o agrupamento de Recursos de Publicação logicamente relacionados . Esse elemento existe para permitir o desenvolvimento de recursos especializados de identificação, processamento e renderização de conteúdo, como a capacidade de definir o conteúdo de visualização incorporado ou montar um índice ou dicionário a partir de seus documentos de conteúdo XHTML constituintes.
 
 
-O Ionic Capacitor é uma aplicação open source que permite a leitura de arquivos EPUB a partir de dispositivos móveis. Esta aplicação é construída sobre o Ionic Framework, que é um kit de ferramentas open source para desenvolvimento de aplicativos móveis. O Ionic Capacitor permite a leitura de arquivos EPUB em dispositivos móveis, como smartphones e tablets, sem necessidade de instalar outros aplicativos. Ele fornece uma interface de usuário intuitiva para navegar pelos arquivos EPUB, bem como recursos avançados, como a capacidade de adicionar anotações e destacar texto. Além disso, ele permite a leitura offline, para que os usuários possam ler mesmo que não estejam conectados à internet. O Ionic Capacitor é uma excelente opção para quem procura uma aplicação de leitura EPUB para dispositivos móveis.
+biblioteca JS:
+AngularEpubViewer => pesquisar sobre essa lib => A AngularEpubViewer é uma biblioteca para Angular que fornece um componente visual para exibir conteúdo EPUB. O componente permite aos usuários navegar por conteúdo EPUB, visualizar capítulos, marcar páginas, pesquisar conteúdo e controlar a exibição de conteúdo. Além disso, a biblioteca oferece diversos recursos de personalização que permitem que os desenvolvedores criem sua própria experiência de leitura.
 
+Epub.js v0.3 => https://www.npmjs.com/package/epubjs 
+epub.js biblioteca javascript. (https://github.com/futurepress/epub.js/)=> https://github.com/futurepress/epub.js
+github documentation => https://github.com/janpio/ionic-epubjs
+https://github.com/viking2917/ionic-epub-reader -> melhor documentado
 
- ***********************  
-
- O Ionic Capacitor é uma aplicação open source que permite a leitura de arquivos EPUB a partir de dispositivos móveis. Esta aplicação é construída sobre o Ionic Framework, que é um kit de ferramentas open source para desenvolvimento de aplicativos móveis. O Ionic Capacitor permite a leitura de arquivos EPUB em dispositivos móveis, como smartphones e tablets, sem necessidade de instalar outros aplicativos. Ele fornece uma interface de usuário intuitiva para navegar pelos arquivos EPUB, bem como recursos avançados, como a capacidade de adicionar anotações e destacar texto. Além disso, ele permite a leitura offline, para que os usuários possam ler mesmo que não estejam conectados à internet. O Ionic Capacitor é uma excelente opção para quem procura uma aplicação de leitura EPUB para dispositivos móveis.
-
-epub.js biblioteca javascript. (https://github.com/futurepress/epub.js/);
 http://viladosilicio.com.br/criando-um-leitor-de-epub-com-javascript/
-https://github.com/viking2917/ionic-epub-reader
 
-como eu consigo instalar  o plugin ionic capacitor epub reader no meu projeto?
+
+
 
 Você precisa obter o plugin de um repositório de terceiros, como o npm ou o GitHub. Depois de obter o plugin, você precisa instalá-lo no seu projeto. Para fazer isso, você precisará usar o comando npm install e especificar o endereço do plugin. Por exemplo: 
 
