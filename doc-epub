@@ -84,3 +84,24 @@ providers: [
 
  A biblioteca Angular mais apropriada para EPUB 3 é a Biblioteca Angular UI-Router, que oferece um conjunto de recursos projetados para ajudar a criar e gerenciar aplicativos EPUB 3 de forma rápida e eficiente. Além disso, ela fornece recursos como configuração de rota, controles de navegação, anotações de conteúdo e estrutura de aplicativo para ajudar a criar uma experiência de usuário integrada.
 
+No ionic:
+
+Para usar a biblioteca epub.js precisamos instalar a biblioteca usando npm:
+
+npm install epub.js --save
+
+Depois de instalada, importar a biblioteca epub.js assim:
+
+import * as EPub from 'epub.js';
+
+Agora você pode usar a biblioteca epub.js em seu aplicativo. Por exemplo, para carregar um ePub:
+
+let epub = EPub('/path/to/epub.epub');
+
+Agora você pode usar as funções da biblioteca epub.js para ler o conteúdo do livro. Por exemplo, para ler o título do livro:
+
+let title = epub.metadata.title;
+
+Para obter mais informações sobre como usar o epub.js, consulte a documentação do projeto na seguinte URL:
+
+https://github.com/futurepress/epub.js
