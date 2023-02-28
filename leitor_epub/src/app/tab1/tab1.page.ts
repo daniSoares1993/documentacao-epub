@@ -7,21 +7,16 @@ declare var require: any
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  // public book: any = '';
-  // public rendition:any = '';
-
+  public ePub:any = require('../../service/service.js');
+  public book:any = this.ePub('../../assets/livros/Menino_de_Ouro_Claire_Adam.epub');
+  public rendition:any = this.book.renderTo("area", {flow: "paginated", width: 350, height: 300,allowScriptedContent: true});
+  
   constructor() {
-    const ePub = require('../../service/service.js');
-    var book = ePub('../../assets/livros/Menino_de_Ouro_Claire_Adam.epub');
-    var rendition = book.renderTo("area", {width: 600, height: 400,allowScriptedContent: true});
-    rendition.display();
+    this.rendition.display();
+  }
+
+  avancar(){
+   this.rendition.next();
   }
   
-  // lerLivro(){
-  //   const ePub = require('../../service/service.js');
-  //   this.book = ePub('../../assets/livros/Menino_de_Ouro_Claire_Adam.epub');
-  //   this.rendition = this.book.renderTo("area", { method: "default", width: "100%", height: "100%" });
-  //   console.log(this.book);
-  //   console.log(this.rendition);
-  // }
 }
