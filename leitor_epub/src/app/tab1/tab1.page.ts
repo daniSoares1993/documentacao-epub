@@ -9,13 +9,18 @@ declare var require: any
 export class Tab1Page {
   public ePub:any = require('../../service/service.js');
   public book:any = this.ePub('../../assets/livros/Menino_de_Ouro_Claire_Adam.epub');
-  public rendition:any = this.book.renderTo("area", {flow: "paginated", width: 350, height: 300,allowScriptedContent: true});
+  public rendition:any = this.book.renderTo("area", {flow: "paginated", width: 365, height: 560,allowScriptedContent: true});
   
   constructor() {
+  }
+  showBook(){
     this.rendition.display();
   }
+  previous(){
+   this.rendition.prev();
+  }
 
-  avancar(){
+  foward(){
    this.rendition.next();
   }
   
