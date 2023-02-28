@@ -1,0 +1,24 @@
+Ionic:
+
+Como estamos utilizando ionic para os nossos projetos, devemos importar os scripts em nossa index.html, importar os dois scripts:
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+
+Em seguida podemos criar uma service, dentro dela conter os dois arquivos .js;
+Para fazer a importação vamos até o arquivo .ts onde queremos utilizar:
+primeiro declaramos:
+declare var require: any
+
+Em seguida definimos as variaveis que iremos utilizar,
+public ePub:any = require('../../service/service.js');
+nosso epub ira importar a service que contem o arquivo .js;
+
+public book:any = this.ePub('../../assets/livros/Menino_de_Ouro_Claire_Adam.epub');
+book será uma variavel dinamica, aqui coloquei só pra testar e ter uma noção de como ficaria no projeto,
+mais podemos colocar uma variavel dinamica, trazendo do banco, ou o nosso cliente escolhendo o livro que ele deseja ler,
+selecionando um select, ou iremos exibir na tela para ele;
+
+public rendition:any = this.book.renderTo("area", {flow: "paginated", width: 365, height: 560,allowScriptedContent: true});
+rendition é onde iremos renderizar o nosso livro, como sera a paginação e seu tamanho de exibicao;
+
+
