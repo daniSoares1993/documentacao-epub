@@ -7,9 +7,11 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <button (click)="showBook()">Clique para exibir o livro</button>
   <div id="area" class="area">
   </div>
 </ion-content>
 <ion-footer>
-  <button (click)="avancar()" > avancar </button>
+  <button (click)="previous()" > Previous </button>
+  <button (click)="foward()" > Foward </button>
 </ion-footer>
