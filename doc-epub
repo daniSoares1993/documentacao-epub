@@ -84,3 +84,59 @@ Uma vez instalado, você pode usar o JSZip no seu projeto adicionando a seguinte
 Agora você pode usar a biblioteca JSZip para manipular arquivos ZIP em seu projeto Ionic. Por exemplo, para ler um arquivo ZIP, você pode usar o seguinte código:
 
 var JSZip = require('jszip'); // Crie um novo objeto JSZip var zip = new JSZip(); // Carregue o arquivo ZIP zip.loadAsync(file).then(function (contents) { // Seu código aqui }).catch(function (e) { // Seu código de erro aqui });
+
+Os métodos mais usados da biblioteca epub.js incluem:
+
+1. open() - Abrir um arquivo epub.
+2. getMetadata() - Obter metadados do arquivo epub.
+3. getTOC() - Obter a Tabela de Conteúdos do arquivo epub(Obtém o sumário do arquivo EPUB).
+4. getChapter() - Obter um capítulo do arquivo epub.
+5. renderTo() - Renderizar um capítulo de epub para um elemento DOM.
+6. next() - Avançar para o próximo capítulo no arquivo epub.
+7. previous() - Voltar para o capítulo anterior no arquivo epub.
+8. search() - Pesquisar texto no arquivo epub.
+9. getCfi() - Obter um CFI (Identificador de Conteúdo Estruturado de Livros) para uma determinada posição no arquivo epub.
+10. getRange() - Obter um intervalo de CFI (Identificador de Conteúdo Estruturado de Livros) para um determinado trecho no arquivo epub.
+11. search(): Pesquisa dentro do arquivo EPUB.
+12. goto(): Vai para uma determinada página do arquivo EPUB.
+
+Principais Features EPUB.JS:
+
+1. Leitura de arquivos EPUB: epub.js suporta a leitura de arquivos EPUB 2 e EPUB 3, bem como a renderização de conteúdo HTML e CSS.
+
+2. Navegação entre os conteúdos: epub.js permite que o usuário navegue pelos conteúdos do livro digital, incluindo a navegação entre os capítulos e seções.
+
+3. UI personalizada: epub.js permite que o desenvolvedor crie uma interface de usuário personalizada para a leitura de livros digitais, como barras de navegação, botões e menus.
+
+4. Leitor de áudio: epub.js suporta a reprodução de áudio e vídeo a partir de arquivos EPUB.
+
+5. Seleção de texto: epub.js permite que o usuário selecione trechos de texto de um arquivo EPUB e copie e compartilhe.
+
+6. Marcações: epub.js permite que o usuário salve marcações e anotações em seus livros digitais.
+
+7. Compartilhamento: epub.js permite que o usuário compartilhe livros digitais com seus amigos por meio de redes sociais.
+
+
+Leitor de audio:
+Para usar o plugin de leitor de áudio HTML5 do Cordova, você primeiro precisará instalá-lo em seu projeto Ionic. Isso pode ser feito executando o seguinte comando no terminal: 
+
+```
+$ ionic cordova plugin add cordova-plugin-media
+```
+
+Em seguida, você precisará adicionar a seguinte linha de código no seu arquivo index.html:
+
+```
+<script src="cordova.js"></script>
+```
+
+Depois que o plugin estiver instalado, você pode usar a API de leitor de áudio HTML5 do Cordova para ler arquivos de áudio no seu projeto Ionic. Você pode encontrar mais informações sobre como usar o leitor de áudio HTML5 do Cordova em seu projeto Ionic consultando a documentação do Cordova aqui: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-media/index.html.
+
+Anotações epub:
+O Epub.js é uma biblioteca JavaScript que permite o desenvolvimento de aplicativos de leitura de livros digitais. É possível usá-lo para criar uma aplicação que permita ao usuário salvar marcações e anotações em seus livros digitais.
+
+Para isso, você precisará usar a API Epub.js para carregar os arquivos EPUB e então usar os métodos de anotação e marcação para permitir que o usuário salve suas anotações e marcações. Os métodos de anotação e marcação estão localizados em: https://github.com/futurepress/epub.js/blob/master/src/epubcfi.js
+
+Além disso, você também precisará usar um serviço de armazenamento para salvar as anotações e marcações do usuário. Por exemplo, você pode usar o Firebase para armazenar os dados de anotação e marcação do usuário e sincronizar os dados entre os dispositivos.
+
+Por fim, você precisará usar o Ionic Framework para criar a interface da sua aplicação. O Ionic Framework é uma plataforma de desenvolvimento de aplicativos móveis baseada em HTML, CSS e JavaScript que permite que você crie aplicativos ricos para iOS, Android e Windows.
