@@ -140,3 +140,12 @@ Para isso, você precisará usar a API Epub.js para carregar os arquivos EPUB e 
 Além disso, você também precisará usar um serviço de armazenamento para salvar as anotações e marcações do usuário. Por exemplo, você pode usar o Firebase para armazenar os dados de anotação e marcação do usuário e sincronizar os dados entre os dispositivos.
 
 Por fim, você precisará usar o Ionic Framework para criar a interface da sua aplicação. O Ionic Framework é uma plataforma de desenvolvimento de aplicativos móveis baseada em HTML, CSS e JavaScript que permite que você crie aplicativos ricos para iOS, Android e Windows.
+
+// Criando uma instância de Epub.js
+const reader = ePub("/path/to/book.epub");
+
+// Selecionando o texto desejado
+let selectedText = window.getSelection().toString();
+
+// Adicionando um comentário ao texto selecionado
+reader.addBookmark(selectedText, {comment: "Meu comentário"});
