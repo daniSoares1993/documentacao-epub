@@ -16,7 +16,12 @@ ion-footer{
     }
 }
     .area{
+        border: solid 1px red;
         width: 100%;
         height: 100%;
         margin: 0 auto;
+    }
+
+    .sublinhar{
+        text-decoration: underline;
     }
