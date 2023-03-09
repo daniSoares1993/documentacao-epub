@@ -33,6 +33,7 @@ export class Tab1Page {
       console.log("Faixa de conteúdo da página 3:", range.startContainer);
     });
     this.rendition.annotations.underline();
+    console.log(this.rendition);
   }
   previous(){
     this.rendition.prev();
@@ -43,13 +44,10 @@ export class Tab1Page {
 
   foward(){
     this.rendition.next();
+    console.log(this.rendition.manager.container.id);
     console.log(this.rendition.reportLocation());
     console.log(this.rendition.currentLocation());
     localStorage.setItem('paginaAtual', JSON.stringify(this.rendition.location));
-  }
-
-  teste(){
-    console.log('clicou');
   }
   
 }
